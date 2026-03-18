@@ -9,10 +9,11 @@ class Solution {
             char c = s.charAt(i);
             if (c == '(') {
                 stack.push(c);
-            } else if (c == ')') {
-                stack.pop();
             } else {
-                answer = false;
+                if (stack.isEmpty()) {
+                    return false;
+                }
+                stack.pop();
             }
         }
         return answer;
