@@ -53,3 +53,6 @@ isEmpty를 사용해 스택이 비어있는지를 검사하고
 마지막에 스택에 무언가 없다면 true, 있다면 false를 반환하는
 
 코드를 작성하는 것으로 최종 수정을 마치게 되었습니다.
+
+<img width="960" height="370" alt="image" src="https://github.com/user-attachments/assets/577a6efc-a37b-4a7b-812d-472560d8afc2" />
+
