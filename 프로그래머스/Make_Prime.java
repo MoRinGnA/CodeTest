@@ -12,7 +12,7 @@ class Solution {
                         prime = false;
                     }
 
-                    for (int o = 2; o < Math.sqrt(sum); o++) {
+                    for (int o = 2; o <= Math.sqrt(sum); o++) {
                         if (sum % o == 0) {
                             prime = false;
                             break;
