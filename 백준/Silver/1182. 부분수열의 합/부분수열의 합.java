@@ -31,6 +31,10 @@ public class Main {
 
         seq(0, 0);
 
+        if (s == 0) {
+            count--;
+        }
         System.out.println(count);
+        sc.close();
     }
 }
