@@ -20,12 +20,12 @@ class Solution {
     int answer = 0;
 
     public int solution(int[] number) {
-        Three(number, 0, 0);
+        Three(number, 0, 0, 0);
         return answer;
 
     }
 
-    public void Three(int[] number, int s, int c) {
+    public void Three(int[] number, int index, int s, int c) {
         if (c == 3) {
             if (s == 0) {
                 answer++;
@@ -33,8 +33,8 @@ class Solution {
             return;
         }
 
-        for (int i = 0; i < number.length; i++) {
-            Three(number, s + number[i], c + 1);
+        for (int i = index; i < number.length; i++) {
+            Three(number, i + 1, s + number[i], c + 1);
         }
     }
 }
