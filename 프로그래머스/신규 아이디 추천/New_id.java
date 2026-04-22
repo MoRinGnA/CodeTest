@@ -10,8 +10,10 @@ class Solution {
             answer = "a";
         }
 
-        answer = answer.substring(0, 15);
-        answer = answer.replaceAll("[.]$", "");
+        if (answer.length() >= 16) {
+            answer = answer.substring(0, 15);
+            answer = answer.replaceAll("[.]$", "");
+        }
 
         for (int i = answer.length(); i < 3; i++) {
             answer = answer.charAt(answer.length() - 1);
