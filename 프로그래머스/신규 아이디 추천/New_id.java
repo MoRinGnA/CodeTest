@@ -16,7 +16,7 @@ class Solution {
         }
 
         for (int i = answer.length(); i < 3; i++) {
-            answer = answer.charAt(answer.length() - 1);
+            answer += answer.charAt(answer.length() - 1);
         }
         return answer;
     }
