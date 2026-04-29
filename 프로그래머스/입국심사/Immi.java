@@ -6,18 +6,19 @@ class Solution {
         long answer = 0;
         Arrays.sort(times);
 
-        right = times[times.length - 1] * n;
-        while (true) {
-            if (compare(n, times, middle) > 0) {
-                if (compare(n, times, middle - 1) < 0) {
-                    break;
-                }
-                middle--;
+        right = (long) times[times.length - 1] * n;
+        while (left <= right) {
+            middle = (left + right) / 2;
+
+            if (compare(n, times, middle) == 1) {
+                right = middle - 1;
+                answer = middle;
+
             } else {
-                middle++;
+                left = middle + 1;
             }
         }
-        return middle;
+        return answer;
     }
 
     public long compare(int n, int[] times, long middle) {
