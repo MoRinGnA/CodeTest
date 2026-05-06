@@ -7,7 +7,7 @@ class Solution {
     static int BFS() {
         var visited = new boolean[ROW][COL];
         var queue = new ArrayDeque<int[]>();
-        queue.add(new int[] { 0, 0, 0 });
+        queue.add(new int[] { 0, 0, 1 });
         while (queue.size() > 0) {
             int[] u = queue.remove();
             int r = u[0], c = u[1], d = u[2];
