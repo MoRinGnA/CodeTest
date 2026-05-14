@@ -23,7 +23,7 @@ class Solution {
         BFS(1, n);
 
         // 배열에 기록된 거리와 최대거리를 비교하여
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
             if (ds[i] == maxd) {
                 answer++;
             } // 최대거리를 가진 노드의 수를 카운트함
